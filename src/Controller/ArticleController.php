@@ -24,6 +24,7 @@ class ArticleController
     {
         return new Response(sprintf(
             "Future page to show the article:
-            $slug"));
+            $slug"
+        ));
     }
 }
