@@ -2,12 +2,12 @@
 
 namespace App\Service;
 
-use App\Helper\LoggerTrait;
+use App\Helper\LoggerTrait2;
 use Nexy\Slack\Client;
 
-class SlackClient
+class SlackClient2
 {
-    use LoggerTrait;
+    use LoggerTrait2;
 
     private $slack;
 

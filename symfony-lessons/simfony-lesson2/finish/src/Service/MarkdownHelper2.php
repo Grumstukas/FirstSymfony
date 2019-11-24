@@ -6,7 +6,7 @@ use Michelf\MarkdownInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Cache\Adapter\AdapterInterface;
 
-class MarkdownHelper
+class MarkdownHelper2
 {
     private $cache;
     private $markdown;

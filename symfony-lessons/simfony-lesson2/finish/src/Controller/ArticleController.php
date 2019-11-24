@@ -2,8 +2,8 @@
 
 namespace App\Controller;
 
-use App\Service\MarkdownHelper;
-use App\Service\SlackClient;
+use App\Service\MarkdownHelper2;
+use App\Service\SlackClient2;
 use Psr\Log\LoggerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -34,7 +34,7 @@ class ArticleController extends AbstractController
     /**
      * @Route("/news/{slug}", name="article_show")
      */
-    public function show($slug, MarkdownHelper $markdownHelper, SlackClient $slack)
+    public function show($slug, MarkdownHelper2 $markdownHelper, SlackClient2 $slack)
     {
         if ($slug === 'khaaaaaan') {
             $slack->sendMessage('Kahn', 'Ah, Kirk, my old friend...');
